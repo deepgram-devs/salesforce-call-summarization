@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ## Run
 
-1. Fill in your credentials on lines 7-10:
+1. Fill in your credentials at the top of `summarize_and_log_calls.py`:
 
 ```
 DEEPGRAM_API_KEY = "<YOUR_DEEPGRAM_API_KEY>"
@@ -21,7 +21,7 @@ PASSWORD = "<YOUR_SALESFORCE_PASSWORD>"
 SECURITY_TOKEN = "<YOUR_SALESFORCE_SECURITY_TOKEN>"
 ```
 
-2. Optionally, edit the Salesforce account name and the audio URL on lines 12-13:
+2. Optionally, edit the Salesforce account name and the audio URL in `summarize_and_log_calls.py`:
 
 ```
 ACCOUNT_NAME = "Deepgram"
