@@ -2,7 +2,7 @@
 
 Summarize sales calls using Deepgram, and log the call summaries on a Salesforce opportunity and account.
 
-See the related blog post for a full walk-through: [TODO](www.deepgram.com)
+See the related blog post for a full walk-through: [Log Deepgram Call Summaries in Salesforce](https://deepgram.com/learn/log-deepgram-call-summaries-in-salesforce)
 
 ## Install requirements
 
