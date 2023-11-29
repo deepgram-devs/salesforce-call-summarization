@@ -37,6 +37,7 @@ python summarize_and_log_calls.py
 4. Output from a successful run is as follows:
 
 ```
+Deepgram API call completed with request ID: <request id>
 Generated call summary: <summary>
 Account Deepgram has ID <id>
 Opportunity name '<opp name>' has ID <id>
