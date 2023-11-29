@@ -13,8 +13,19 @@ CALL_URL = "https://static.deepgram.com/examples/nasa-spacewalk-interview.wav"
 
 def summarize(deepgram_client, call_url):
     """Use Deepgram to summarize the call at the URL provided."""
-    response = deepgram_client.transcription.sync_prerecorded({"url": call_url}, {"summarize": "v2"})
+    response = deepgram_client.transcription.sync_prerecorded(
+        {
+            "url": call_url
+        },
+        {
+            "model": "nova-2",
+            "smart_format": True,
+            "summarize": "v2",
+        }
+    )
+    request_id = response["metadata"]["request_id"]
     summary = response["results"]["summary"]["short"]
+    print("Deepgram API call completed with request ID:", request_id)
     print("Generated call summary:", summary)
     return summary
 
